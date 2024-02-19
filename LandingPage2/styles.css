@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --background-color1: #0a0a23;
+    --background-color2: #F0EAD6;
+    --background-color3: #1b1b32;
+    --font-color1: #F9F6EE;
+    --font-color2: #36454F;
+    --padding-header: 6px;
+    --margin-header: 60px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", "Lato", sans-serif, 'Times New Roman', Times, serif;
+}
+img {
+    object-fit: cover;
+}
+html {
+    font-size: 16px;
+}
+body {
+    width: 100%;
+    background-color: var(--background-color2);
+    color: var(--font-color1);
+}
+p{
+    color: var(--font-color2);
+}
+h1 {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--padding-header);
+    padding-bottom: var(--padding-header);
+    margin-top: calc(var(--margin-header) - var(--padding-header));
+    margin-bottom: calc(var(--margin-header) - var(--padding-header));
+    position: sticky;
+    top: 0;
+    transition: 0.3s ease-out;
+}
+header p {
+    font-family: "Ubuntu Mono", "Lato", 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: var(--font-color1);
+}
+.background-blue {
+    background-color: var(--background-color1);
+}
+.sherlock-presentation img {
+    width: 300px;
+    background-color: #E2DFD2;
+    border-radius: 12px;
+}
+.sherlock-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sherlock-presentation p{
+    padding: 6px;
+}
+.sherlock-bio {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+    gap: 8px;
+}
+.sherlock-bio h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--font-color2);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.span-bold {
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 60px;
+    background-color: var(--background-color3);
+    padding-right: 20px;
+}
+footer p{
+    color: var(--font-color1);
+    font-family:monospace, sans-serif;
+}
+.div-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.div-title i{
+    font-size: 2.4rem;
+}
