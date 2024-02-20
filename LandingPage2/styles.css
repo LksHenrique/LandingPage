@@ -7,7 +7,7 @@
     --font-color1: #F9F6EE;
     --font-color2: #36454F;
     --padding-header: 6px;
-    --margin-header: 60px;
+    --margin-header: 20px;
 }
 
 
@@ -16,6 +16,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", "Lato", sans-serif, 'Times New Roman', Times, serif;
+}
+img {
+    max-width: 100%;
+}
+#image {
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 img, svg {
     object-fit: cover;
