@@ -29,9 +29,10 @@ img, svg {
     object-fit: cover;
 }
 html {
+    min-width: 330px;
     font-size: 16px;
 }
-body {
+body {    
     width: 100%;
     background-color: var(--background-color2);
     color: var(--font-color1);
@@ -127,3 +128,10 @@ footer p{
 .div-title i{
     font-size: 2.4rem;
 }
+@media screen and (max-width: 442px) {
+    /* Estilos que serão aplicados quando a largura da tela for igual ou inferior a 442 pixels */
+    /* Por exemplo: */
+    h1{
+        font-size: 2rem;
+    }
+  }
