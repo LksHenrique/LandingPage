@@ -99,5 +99,8 @@ main {
     overflow-y: auto;
 }
 section.doc-text {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
     margin-bottom: 12px;
 }
