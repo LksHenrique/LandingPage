@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", "Lato", 'Times New Roman', Times, serif;
+
+}
+:root {
+    --color-1: #EEEDEB;
+    --color-2: #E0CCBE;
+    --color-2: #747264;
+    --color-3: #3C3633;
+
+}
+html, body {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 3ms all ease-in-out;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--color-3);
+}
+ul.list-header {
+    list-style: none;
+    display: flex;
+    gap: 1.4rem;
+    padding: 30px;
+}
+.list-header a {
+    color: #FFF;
+}
+.list-header a:hover{
+    background-color: #FFF;
+}
+a:hover {
+    color: var(--color-3);
+}
+h1 {
+    font-family: "Anta", "Ubuntu Mono", "Lato", 'Times New Roman', Times, serif;
+}
