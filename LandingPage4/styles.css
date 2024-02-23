@@ -7,14 +7,20 @@
 
 }
 :root {
-    --color-1: #EEEDEB;
-    --color-2: #E0CCBE;
-    --color-2: #747264;
-    --color-3: #3C3633;
-
+    --color-1:  	#18191a;
+    --color-2: #242526;
+    --color-3:  #3a3b3c;
+    --color-4: #e4e6eb;
+    --color-5: #b0b3b8;
+    --color-6: #36454F;
+    --color-7: #66b933;
 }
 html, body {
     width: 100%;
+    background-color: var(--color-1);
+    background-image: url(bg.jpg);
+    background-size: cover; /* para preencher toda a div */
+    background-attachment: fixed; /* para manter o background fixo */
 }
 a {
     text-decoration: none;
@@ -24,8 +30,10 @@ a {
 header {
     display: flex;
     align-items: center;
-    justify-content: end;
-    background-color: var(--color-3);
+    justify-content: space-evenly;
+    background-color: var(--color-1);
+
+    border-bottom: 1px solid #fff;
 }
 ul.list-header {
     list-style: none;
@@ -33,15 +41,141 @@ ul.list-header {
     gap: 1.4rem;
     padding: 30px;
 }
+a {
+    color: #FFF;
+    text-decoration: none;
+}
 .list-header a {
     color: #FFF;
-}
-.list-header a:hover{
-    background-color: #FFF;
+    font-size: 1.3rem;
 }
 a:hover {
-    color: var(--color-3);
+    color: var(--color-5);
+}
+.presentation-container {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(24, 25, 26, 0.85);
 }
 h1 {
-    font-family: "Anta", "Ubuntu Mono", "Lato", 'Times New Roman', Times, serif;
+    font-family: "Lato", 'Times New Roman', Times, serif;
+    color: #FFF;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: "Ubuntu Mono", monospace , 'Times New Roman', Times, serif;
+    color: #FFF;
+    font-size: 1.8rem;
+}
+.div-sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.logo i {
+    font-size: 3.2rem;
+}
+
+.presentation-projects {
+    flex-direction: column;
+    border-top: 1px solid #FFF;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-1);
+    text-align: center;
+    gap: 20px;
+}
+.personal-info {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--color-1);
+}
+.catchphrase {
+    color: #FFF;
+    font-size: 3rem;
+}
+.personal-info h3.sub-title {
+    font-style: italic;
+}
+.social-media {
+    margin-bottom: 30px;
+}
+.list-social-media {
+    padding: 10px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 2rem;
+}
+footer {
+    font-size: 1.1rem;
+    border-top: 1px solid #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--color-1);
+    padding: 20px;
+    color: #FFF;
+}
+.project-container img {
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+}
+.projects {
+    display: flex;
+    gap: 30px;
+}
+.btn-show-all {
+    background-color: var(--color-1);
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    width: 300px;
+
+}
+.btn-show-all:hover {
+    background-color: #FFF;
+    color: var(--color-1);
+}
+/* Largura e cor da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--color-1); /* cor de fundo */
+}
+
+/* Rolo de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* cor do rolo */
+    border-radius: 5px; /* borda arredondada */
+}
+
+/* Rolo ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* cor do rolo ao passar o mouse */
 }
